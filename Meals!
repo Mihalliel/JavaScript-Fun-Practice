@@ -4,11 +4,15 @@ const menu = {
   set meal(mealToCheck){
     if (typeof mealToCheck === 'string') {
       return this._meal = mealToCheck;
+    } else {
+      console.log('Please enter a valid meal!')
     }
   },
   set price(priceToCheck){
     if (typeof priceToCheck === 'number') {
       return this._price = priceToCheck;
+    } else {
+      console.log('Please enter a number!')
     }
   },
   get todaysSpecial(){
